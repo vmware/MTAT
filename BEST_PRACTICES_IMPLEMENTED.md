@@ -217,12 +217,3 @@ environment.
 
 ---
 
-## Known documentation gap
-
-`README.md` currently states that historical data collection requires **vCenter Statistical Level
-2 or higher**. As of the latest fix pass, MTAT's own range-visibility check now only requires
-**Level 1** (matching what its `Get-Stat` queries actually need, see #4 above, and the code
-comment at the historical-range discovery logic). The `README.md` line predates that fix and should
-be updated to avoid telling users they need a higher Statistics Level than the tool actually
-requires. Flagging here rather than changing `README.md` unprompted, since it wasn't part of this
-specific request.
